@@ -26,16 +26,20 @@ body {
 }
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }                      
 .container {
     width: 1200px;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
                                 /* Header section */
                                     /* Logo */
 .logo-head {
     text-decoration: none;
-    cursor: var(--cursor-default)
+    cursor: var(--cursor-default);
 }
 
 .logo-one {
@@ -55,14 +59,24 @@ body {
     letter-spacing: 0.03em;
 }
                                 /*  Site nav */
+.site-nav {
+    display: flex;
+}
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+
 .site-nav .link {
+    display: block;
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-decoration: none;
-    cursor: var(--cursor-default)
+    cursor: var(--cursor-default);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .site-nav .link:hover, 
 .site-nav .link:focus {
@@ -72,31 +86,36 @@ body {
     color: var(--color-logo);
 }
                                 /* Info nav */
-
-.info .item {
-    color: var(--primary-text-color) ;
+.info {
+    display: flex;
+}
+.info .link {
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-decoration: none;
-    cursor: var(--cursor-default)
+    cursor: var(--cursor-default);
 }
-.info .item:hover, 
-.info .item:focus {
+.info .item + .item {
+    margin-left: 50px;
+}
+.info .link:hover, 
+.info .link:focus {
     color: var(--color-logo);
     
 }
                                 /* Servis section */
 .service {
     background-color: #2F303A;
-    width: 1600px;
     height: 600px;
-    left: 0px;
-    top: 80px;
     text-align: center;
 }
 .service-hero {
+    padding-top: 200px;
+    margin-top: 0;
+    margin-bottom: 30px;
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
@@ -115,18 +134,27 @@ body {
 .service button {
     color: var(--white-color);
     background: var(--color-logo);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    Width: 200px;
+    Height: 50px;
+    border-radius: 4px;
 }
 .service button:hover,
 .service button:focus {
     color: var(--secondary-text-color);
 }
                                 /* Benefits section */
+.benefits {
+    padding-top: 94px;
+}
 .benefits-hero {
     color: var(--secondary-text-color);
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
 
 }
 .benefits-text {
@@ -134,6 +162,8 @@ body {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
                                 /* Work section */
@@ -176,9 +206,14 @@ body {
     display: inline-block;
 }
                                 /* Footer section */
+.footer .container a{
+    display: block;
+}
 .logo-footer {
     text-decoration: none;
-    cursor: var(--cursor-default)
+    cursor: var(--cursor-default);
+    padding-top: 60px;
+    
 }
 .logo-white {
     color: var(--white-color);
@@ -190,12 +225,9 @@ body {
 }
 .footer {
     background-color: #2F303A;
-    width: 1600px;
     height: 252px;
-    left: 0px;
     top: 1628px;
 }
-
 .address-location {
     color: var(--white-color);
     font-size: 14px;
@@ -211,12 +243,13 @@ body {
 .address a {
     text-decoration: none;
     font-style: normal;
-    cursor: var(--cursor-default)
+    cursor: var(--cursor-default);
 }
 .address a:hover,
 .address a:focus {
     color: var(--color-logo);
 }
+
                                     
                                     /* Страница Портфолио */
 

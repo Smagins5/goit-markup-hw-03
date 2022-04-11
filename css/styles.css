@@ -37,7 +37,7 @@ body {
 }
                                 /* Header section */
 .header-style {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 .main-nav {
     display: flex;
@@ -139,13 +139,13 @@ body {
     line-height: 1.9;
     letter-spacing: 0.06em;
     cursor: pointer;
+    padding: 10px 32px;
 }
 .service button {
     color: var(--white-color);
     background: var(--color-logo);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    Width: 200px;
-    Height: 50px;
+
     border-radius: 4px;
 }
 .service button:hover,
@@ -202,6 +202,11 @@ body {
 }
 .work-list .item + .item {
     margin-left: 30px;
+}
+.work-list img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
                                 /* Team section */
 .team {
@@ -307,8 +312,9 @@ border-radius: 0px 0px 4px 4px;
                                         /* Фильтр */
 .list-button {
     display: flex;
+    padding-top: 94px;
     padding-bottom: 50px;
-    align-items: center;
+    
     justify-content: center;
 }
 .list-filter {
@@ -361,6 +367,12 @@ border-radius: 0px 0px 4px 4px;
 .examples {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 94px;
+}
+.examples img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .examples-item {
     border: 1px solid #EEEEEE;

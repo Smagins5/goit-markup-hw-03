@@ -36,6 +36,10 @@ body {
     margin: 0 auto;
 }
                                 /* Header section */
+.main-nav {
+    display: flex;
+    align-items: center;
+}
                                     /* Logo */
 .logo-head {
     text-decoration: none;
@@ -61,6 +65,7 @@ body {
                                 /*  Site nav */
 .site-nav {
     display: flex;
+    margin-left: 93px;
 }
 .site-nav .item + .item {
     margin-left: 50px;
@@ -88,6 +93,7 @@ body {
                                 /* Info nav */
 .info {
     display: flex;
+    margin-left: auto;
 }
 .info .link {
     color: var(--primary-text-color);
@@ -144,8 +150,16 @@ body {
     color: var(--secondary-text-color);
 }
                                 /* Benefits section */
+.benefits-list {
+    display: flex;
+}
+.benefits .item + .item {
+    margin-left: 30px;
+}
+
 .benefits {
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 .benefits-hero {
     color: var(--secondary-text-color);
@@ -168,17 +182,25 @@ body {
 
                                 /* Work section */
 .work-hero {
+    margin-top: 0;
+    margin-bottom: 50px;
     color: var(--secondary-text-color);
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
 }
-.work-list li {
-    display: inline;
+.work-list {
+    display: flex;
+    padding-bottom: 94px;
+}
+.work-list .item + .item {
+    margin-left: 30px;
 }
                                 /* Team section */
-                                
+.team-list {
+    display: flex
+}
 .team {
     background-color: #F5F4FA;
     }
@@ -188,23 +210,25 @@ body {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 .team-name {
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
+    text-align: center;
     letter-spacing: 0.03em;
 }
-.team-positio {
+.team-position {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.2;
+    text-align: center;
     letter-spacing: 0.03em;
 }
-.team-list li {
-    display: inline-block;
-}
+
                                 /* Footer section */
 .footer .container a{
     display: block;
